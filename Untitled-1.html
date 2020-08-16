@@ -1,0 +1,144 @@
+<!DOCTYPE html> 
+<html>
+
+<style>
+
+    body {
+        margin: 0 auto;
+    }
+
+    .header {
+        background-color: aqua;
+        color:blueviolet;
+        padding: 30px;
+        text-align: center;
+    }
+
+    .menu {
+        overflow: hidden;
+        background-color: dodgerblue;
+    }
+    .menu a {
+        float: left;
+        display: block;
+        text-decoration: none;
+        padding: 14px 16px;
+    }
+    
+    .menu a:hover{
+        background-color: darkblue;
+        color: white;
+        fount-weight: bold;
+
+    }
+    .column_center {
+       height: 100%;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+    }
+    .column_centermargin {
+        margin: 0 auto;
+        width: 300px;
+        text-align: center;
+    }
+    .row {
+        width: 900px;
+        border: 1px solid black;
+        padding: 1px;
+    }
+    .column_1 {
+        width: 600px;
+        background: greenyellow;
+        float: left;
+    
+    }
+
+    .column_2 {
+        width: 300px;
+        background: grey;
+        float: right;
+    }
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    .clear {
+        clear: both;
+    }
+    .cot3 {
+    display: flex;
+    justify-content: space-between;
+    margin-left: -1rem;
+    flex-flow: row wrap;
+}
+
+    .column_3 {
+        flex: 1 0;
+        background-color: green;
+        margin-left: 1rem;
+        margin-bottom: 1rem;
+        padding: 1rem;
+}
+</style>
+<title> HTML </title>
+
+<body>
+
+<div class="header">
+    Header 
+
+</div>
+<div class="menu">
+    <a href="#"> 1 column</a>
+    <a href="#"> 2 columns</a>
+    <a href="#"> 3 colums</a>
+</div>
+<div class="column_centermargin">
+    <h2> 1 column </h2> 
+    <p> 
+        <br> Lần đầu làm chuyện ấy
+        <br> Lần đầu làm chuyện ấy
+        <br> Lần đầu làm chuyện ấy
+        <br> Lần đầu làm chuyện ấy
+
+    </p>
+
+</div>
+
+<div class="row"> 
+    <div class = "column_1">
+        <h2> 2 column </h2>
+        <br> Lần thứ 2 làm chuyện ấy
+        <br> Lần thứ 2 làm chuyện ấy
+    </div>
+    <div class = "column_2">
+        <h2> 2 column </h2>
+        <br> Lần thứ 2 làm chuyện ấy
+        <br> Lần thứ 2 làm chuyện ấy
+    </div>
+
+</div>
+<div class = "cot3">
+    <div class = "column_3">
+        <h2> 3 column</h2>
+        <br> Lần thứ 3 làm chuyện ấy
+        <br> Lần thứ 3 làm chuyện ấy
+    </div>
+
+    <div class = "column_3">
+        <h2> 3 column</h2>
+        <br> Lần thứ 3 làm chuyện ấy
+        <br> Lần thứ 3 làm chuyện ấy
+    </div>
+
+    <div class = "column_3">
+        <h2> 3 column</h2>
+        <br> Lần thứ 3 làm chuyện ấy
+        <br> Lần thứ 3 làm chuyện ấy
+    </div>
+
+</div>
+</body>
